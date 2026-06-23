@@ -59,7 +59,6 @@ It is designed to learn full-stack mobile development with REST APIs and relatio
 ### Preview 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9ca71954-36a6-4c42-ae0f-56f357e36aeb" width="150"/>
-  <img src="https://github.com/user-attachments/assets/8c347518-58d5-4708-8106-b8902de1c377" width="150"/>
   <img src="https://github.com/user-attachments/assets/e41d00bc-b94d-4e88-9625-943fd0e6bd2e" width="150"/>
   <img src="https://github.com/user-attachments/assets/1148dfba-28f3-42e1-a583-58beec1e52c3" width="150"/>
   <img src="https://github.com/user-attachments/assets/ad2ea575-6846-4051-94ea-d90599d2e05e" width="150"/>
