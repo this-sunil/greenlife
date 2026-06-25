@@ -111,10 +111,8 @@ class MedicineScreen extends StatelessWidget {
                 // Action button (modern pill style)
                 InkWell(
                   onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text("🔔 Reminder set for ${m['name']}"),
-                      ),
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text("Reminder set for ${m['name']}")),
                     );
                   },
                   child: Container(
