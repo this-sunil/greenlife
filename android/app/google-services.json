@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434678388315",
+    "project_id": "greenlife-f2d2c",
+    "storage_bucket": "greenlife-f2d2c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434678388315:android:6b609333a525e685a6517e",
+        "android_client_info": {
+          "package_name": "com.brand.greenlife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDhEPsbuZm6upxCJdk3CbVZ33mFYs_Qak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

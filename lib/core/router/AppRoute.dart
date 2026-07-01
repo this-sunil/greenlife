@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:greenlife/layer/screen/Auth/SignInScreen.dart';
+import 'package:greenlife/layer/screen/auth/SignUpScreen.dart';
 import 'package:greenlife/layer/screen/doctor/appointment/DoctorAppointment.dart';
 import 'package:greenlife/layer/screen/patient/insurance/InsurancePage.dart';
 import 'package:greenlife/layer/screen/patient/medicine/MedicineScreen.dart';
@@ -13,6 +15,8 @@ import '../../layer/SplashScreen.dart';
 
 class AppRoute {
   static const String initialRoute = "/";
+  static const String signIn='/signIn';
+  static const String signUp='/signUp';
   static const String dashboard = "/dashboard";
   static const String findDoctor = "/findDoctor";
   static const String viewProfile = "/viewProfile";
@@ -22,6 +26,7 @@ class AppRoute {
   static const String insurance='/insurance';
   static const String emergency='/emergency';
   static const String healthRecord='/heathRecord';
+
 
   static RouteTransitionsBuilder transitionsBuilder = (context, animation, secondaryAnim, child) {
         return ScaleTransition(
@@ -36,6 +41,16 @@ class AppRoute {
         return PageRouteBuilder(
           transitionsBuilder: transitionsBuilder,
           pageBuilder: (c, anim, secondaryAnim) => SplashScreen(),
+        );
+      case signIn:
+        return PageRouteBuilder(
+          transitionsBuilder: transitionsBuilder,
+          pageBuilder: (c, anim, secondaryAnim) => SignInScreen(),
+        );
+      case signUp:
+        return PageRouteBuilder(
+          transitionsBuilder: transitionsBuilder,
+          pageBuilder: (c, anim, secondaryAnim) => SignUpScreen(),
         );
       case dashboard:
         return PageRouteBuilder(

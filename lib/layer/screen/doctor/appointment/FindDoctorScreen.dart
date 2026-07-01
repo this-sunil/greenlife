@@ -7,7 +7,6 @@ import 'package:solar_icons/solar_icons.dart';
 import '../../../../core/router/AppRoute.dart';
 import '../../../../data/entity/DoctorModel.dart';
 import '../../../widget/CustomInput.dart';
-import '../../doctor/appointment/DoctorAppointment.dart';
 
 class FindDoctorScreen extends StatefulWidget {
   const FindDoctorScreen({super.key});

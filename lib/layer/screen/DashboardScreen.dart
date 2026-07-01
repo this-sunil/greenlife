@@ -5,6 +5,7 @@ import 'package:greenlife/layer/pages/HealthPage.dart';
 import 'package:greenlife/layer/pages/HomePage.dart';
 import 'package:greenlife/layer/pages/ProfilePage.dart';
 import 'package:solar_icons/solar_icons.dart';
+import '../../core/service/FirebaseSetup.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -22,6 +23,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     // TODO: implement initState
     page=[HomePage(),AppointmentPage(),HealthPage(),ProfilePage()];
     currentPage=page[currentIndex];
+
     super.initState();
   }
   @override
@@ -58,6 +60,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
             BottomNavigationBarItem(icon: Icon(SolarIconsOutline.health),label: "Health"),
             BottomNavigationBarItem(icon: Icon(SolarIconsOutline.userCircle),label: "Profile"),
           ]),
+      floatingActionButton: FloatingActionButton(onPressed: () async{
+       // await FirebaseSetup.instance.showNotification("Welcome Sunil","Take care of your fitness");
+       await FirebaseSetup.instance.sendOTP("+918668796251");
+      },child: Icon(Icons.notification_add,color: Colors.black)),
     );
   }
 }

@@ -36,6 +36,7 @@ class AppTheme {
       brightness: .dark,
       background: Colors.black,
     ),
+
     iconTheme: const IconThemeData(color: Colors.white),
     appBarTheme: AppBarTheme(
       elevation: 10,
